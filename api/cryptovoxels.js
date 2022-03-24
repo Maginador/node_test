@@ -13,7 +13,6 @@ router.get("/", async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     req.setHeader('Access-Control-Allow-Origin', '*');
     let wallet = req.query.wallet;
-    console.log(wallet)
     let result = "";
     for(let i = 0; i<whitelist.length; i++){
       if(wallet === whitelist[i])
