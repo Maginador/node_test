@@ -20,6 +20,11 @@ router.get("/", async (req, res) => {
       status: 200,
       message: result,
     });
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    );
   } catch (error) {
     console.error(error);
     return res.status(500).send("Server error");
