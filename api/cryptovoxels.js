@@ -9,9 +9,6 @@ let url = "https://wiki.cryptovoxels.com/cat.vox";
  */
 router.get("/", async (req, res) => {
   try {
-    res.set('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    req.setHeader('Access-Control-Allow-Origin', '*');
     let wallet = req.query.wallet;
     let result = "";
     for(let i = 0; i<whitelist.length; i++){
