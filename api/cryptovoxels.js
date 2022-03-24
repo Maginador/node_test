@@ -11,6 +11,7 @@ router.get("/", async (req, res) => {
   try {
     res.set('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Origin', '*');
+    req.setHeader('Access-Control-Allow-Origin', '*');
     let wallet = req.query.wallet;
     console.log(wallet)
     let result = "";
