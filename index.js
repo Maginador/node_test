@@ -10,7 +10,7 @@ app.get('/allow-cors', function(request, response) {
 app.use(express.json({ extended: false }));
 app.use(cors());
 app.use("/cryptovoxel/", cryptovoxels);
-app.use("/cryptovoxel/", decentraland);
+app.use("/decentraland/", decentraland);
 // CORS header `Access-Control-Allow-Origin` set to accept all
 
 
