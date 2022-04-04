@@ -18,6 +18,7 @@ router.get("/", async (req, res) => {
     setTimeout(function(){
       let wallet = req.query.wallet;
       let result = "";
+      console.log(wallet, whitelist, url);
       for(let i = 0; i<whitelist.length; i++){
         if(wallet === whitelist[i])
           result = url;
