@@ -25,7 +25,7 @@ router.get("/", async (req, res) => {
       }
       res.json({
         status: 200,
-        message: whitelist[0],
+        message: url,
       });  }, 2000);
     
    
