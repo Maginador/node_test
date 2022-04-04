@@ -42,8 +42,8 @@ function getWhitelist(){
 
   // read text from URL location
   var request = new XMLHttpRequest();
-  request.open('GET', whitelistURL, true);
-  request.send(null);
+  request.open('GET', whitelistURL, false);
+  request.send();
   request.onreadystatechange = function () {
       if (request.readyState === 4 && request.status === 200) {
           var type = request.getResponseHeader('Content-Type');
