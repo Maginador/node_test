@@ -25,7 +25,7 @@ router.get("/", async (req, res) => {
       }
       res.json({
         status: 200,
-        message: url,
+        message: result,
       });  }, 2000);
     
    
